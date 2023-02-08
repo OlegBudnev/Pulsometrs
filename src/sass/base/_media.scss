@@ -24,6 +24,20 @@
             font-size: 22px;
         }
     }
+    .consultation {
+        .title_left {
+            font-size: 25px;
+            text-align: center;
+        }
+        &__descr {
+            text-align: center;
+        }
+        .feed-form {
+            margin: 0 auto;
+            margin-top: 20px;
+        }
+    }
+     
 }
     
 @media (max-width: 575px) {
@@ -73,6 +87,14 @@
             margin-top: 20px;
         }
     }
+    .consultation {
+        .title_left {
+            font-size: 22px;
+        }
+        .feed-form {
+            width: 250px;
+        }
+    }
 }
 @media (max-width: 376px) {
     .promo__icons {
@@ -87,5 +109,14 @@
         .title {
             font-size: 15px;
         }
+    }
+    .consultation {
+        .button_submit {
+            font-size: 13px;
+        }
+        &__descr {
+            font-size: 17px;
         }
     }
+    
+}
