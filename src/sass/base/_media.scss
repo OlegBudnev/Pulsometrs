@@ -2,7 +2,30 @@
     .promo {
         &__wrapper {
             align-items: center;
-        }  
+        }
+    .carousel {
+        .slick-dots {
+            display: none;
+        }
+    }
+    }
+    .catalog {
+        &__content {
+            justify-content: space-evenly;
+        }
+        &-item {
+            width: 250px;
+            &__old-price {
+                font-size: 10px;
+            }
+            &__price {
+                font-size: 15px;
+            }
+        }
+        .button_mini {
+            width: 131px;
+            height: 40px;
+        }
     }
 
 }
@@ -37,7 +60,12 @@
             margin-top: 20px;
         }
     }
-     
+    .catalog {
+        &__content {
+            justify-content: space-evenly;
+        }
+    }
+    
 }
     
 @media (max-width: 575px) {
@@ -53,6 +81,28 @@
             margin: 0 auto;
         }
     }
+    .catalog {
+        &__tab {
+            font-size: 12px;
+            width: 160px;
+            height: 45px;
+            line-height: 45px;
+        }
+        .title {
+            font-size: 22px;
+            margin-top: 20px;
+        }
+        &-item {
+            &__footer {
+                flex-direction: column;
+            }
+        }
+        .button {
+            width: 170px;
+            height: 32px;
+            margin-top: 10px;
+        }
+    }
     .promo {
         &__wrapper {
             align-items: center;
@@ -66,6 +116,9 @@
         }
         &__link {
             font-size: 12px;
+        }
+        &__icons {
+            width: 400px;
         }
         &__icon {
             font-size: 12px;
@@ -95,6 +148,38 @@
             width: 250px;
         }
     }
+    .carousel {
+        display: none;
+    }
+    .reviwes {
+        .title {
+            font-size: 20px;
+        }
+        &__clients {
+            flex-direction: column;
+        }
+        &__img {
+            
+            margin: 0 auto;
+        }
+        &__wrapper {
+            margin-left: 0;
+            text-align: center;
+            br {
+                display: none;
+            }
+        }
+        &__name {
+            font-size: 14px;
+            span {
+                font-size: 12px;
+            }
+        }
+        &__descr {
+            font-size: 12px;
+        }
+        
+    }
 }
 @media (max-width: 376px) {
     .promo__icons {
@@ -116,6 +201,20 @@
         }
         &__descr {
             font-size: 17px;
+        }
+    }
+    .catalog {
+        &__tabs {
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        &__tab {
+            width: 150px;
+            height: 40px;
+            line-height: 40px;
+            &:last-child {
+                margin-top: 12px;
+            }
         }
     }
     

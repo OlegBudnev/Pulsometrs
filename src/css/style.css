@@ -350,9 +350,50 @@
       .catalog-item__back:hover {
         color: #C70101; }
 
+.reviwes__clients {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 70px; }
+.reviwes__img {
+  width: 169px;
+  height: 169px; }
+.reviwes__wrapper {
+  margin-left: 62px; }
+  .reviwes__wrapper span {
+    margin-top: 10px;
+    font-size: 14px;
+    font-weight: 300;
+    color: #646464; }
+.reviwes__name {
+  margin-top: 15px;
+  font-size: 18px;
+  font-weight: 700;
+  color: #0d0d0d; }
+.reviwes__descr {
+  margin-top: 19px;
+  font-size: 16px;
+  font-weight: 300;
+  color: #0d0d0d; }
+  .reviwes__descr hr {
+    color: white; }
+
 @media (max-width: 991px) {
   .promo__wrapper {
-    align-items: center; } }
+    align-items: center; }
+  .promo .carousel .slick-dots {
+    display: none; }
+
+  .catalog__content {
+    justify-content: space-evenly; }
+  .catalog-item {
+    width: 250px; }
+    .catalog-item__old-price {
+      font-size: 10px; }
+    .catalog-item__price {
+      font-size: 15px; }
+  .catalog .button_mini {
+    width: 131px;
+    height: 40px; } }
 @media (max-width: 769px) {
   .promo__wrapper {
     align-items: center; }
@@ -372,7 +413,10 @@
     text-align: center; }
   .consultation .feed-form {
     margin: 0 auto;
-    margin-top: 20px; } }
+    margin-top: 20px; }
+
+  .catalog__content {
+    justify-content: space-evenly; } }
 @media (max-width: 575px) {
   .header__official {
     display: none; }
@@ -381,6 +425,21 @@
   .header__logo {
     display: block;
     margin: 0 auto; }
+
+  .catalog__tab {
+    font-size: 12px;
+    width: 160px;
+    height: 45px;
+    line-height: 45px; }
+  .catalog .title {
+    font-size: 22px;
+    margin-top: 20px; }
+  .catalog-item__footer {
+    flex-direction: column; }
+  .catalog .button {
+    width: 170px;
+    height: 32px;
+    margin-top: 10px; }
 
   .promo__wrapper {
     align-items: center; }
@@ -391,6 +450,8 @@
     font-size: 15px; }
   .promo__link {
     font-size: 12px; }
+  .promo__icons {
+    width: 400px; }
   .promo__icon {
     font-size: 12px; }
 
@@ -409,7 +470,28 @@
   .consultation .title_left {
     font-size: 22px; }
   .consultation .feed-form {
-    width: 250px; } }
+    width: 250px; }
+
+  .carousel {
+    display: none; }
+
+  .reviwes .title {
+    font-size: 20px; }
+  .reviwes__clients {
+    flex-direction: column; }
+  .reviwes__img {
+    margin: 0 auto; }
+  .reviwes__wrapper {
+    margin-left: 0;
+    text-align: center; }
+    .reviwes__wrapper br {
+      display: none; }
+  .reviwes__name {
+    font-size: 14px; }
+    .reviwes__name span {
+      font-size: 12px; }
+  .reviwes__descr {
+    font-size: 12px; } }
 @media (max-width: 376px) {
   .promo__icons {
     flex-direction: column;
@@ -425,6 +507,16 @@
   .consultation .button_submit {
     font-size: 13px; }
   .consultation__descr {
-    font-size: 17px; } }
+    font-size: 17px; }
+
+  .catalog__tabs {
+    flex-wrap: wrap;
+    justify-content: space-around; }
+  .catalog__tab {
+    width: 150px;
+    height: 40px;
+    line-height: 40px; }
+    .catalog__tab:last-child {
+      margin-top: 12px; } }
 
 /*# sourceMappingURL=style.css.map */

@@ -8,7 +8,14 @@ $(document).ready(function(){
                 {
                     breakpoint: 992,
                     settings: {
-                      dots: true,
+                      dots: false,
+                      arrows: false
+                    }
+                },
+                {
+                    breakpoint: 769,
+                    settings: {
+                      dots: false,
                       arrows: false
                     }
                 }
@@ -20,8 +27,6 @@ $(document).ready(function(){
               .addClass('catalog__tab_active').siblings().removeClass('catalog__tab_active')
               .closest('div.conteiner').find('div.catalog__content').removeClass('catalog__content_active').eq($(this).index()).addClass('catalog__content_active');
           });
-
-          
 
           function toggleSlide(item) {
             $(item).each(function (i) { 
