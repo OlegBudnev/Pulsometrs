@@ -28,6 +28,9 @@
         font-size: 16px;
         font-weight: 300;
         color: #0d0d0d;
+        &:last-child {
+            margin-bottom: 71px;
+        }
         hr {
             color: white;
         }
