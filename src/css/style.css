@@ -1,3 +1,10 @@
+@keyframes heartbeat {
+  from {
+    transform: scale(1); }
+  50% {
+    transform: scale(1.5); }
+  to {
+    transform: scale(1); } }
 * {
   font-family: "Museo Sans Cyrl", sans-serif;
   box-sizing: border-box; }
@@ -26,6 +33,13 @@
     right: -66px;
     left: auto; }
 
+@keyframes heartbeat {
+  from {
+    transform: scale(1); }
+  50% {
+    transform: scale(1.5); }
+  to {
+    transform: scale(1); } }
 .promo {
   min-height: 650px;
   padding: 21px 0 93px 0;
@@ -149,6 +163,10 @@
   .benefits__icon {
     display: block;
     margin: 0 auto; }
+    .benefits__icon_animation {
+      animation: heartbeat 1.5s ease infinite; }
+      .benefits__icon_animation:hover {
+        animation-play-state: paused; }
   .benefits__title {
     margin-top: 38px;
     text-align: center;
@@ -492,6 +510,17 @@
 
 #consultation, #order, #thanks {
   display: none; }
+
+.pageup {
+  display: none;
+  display: block;
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  width: 30px;
+  height: 30px; }
+  .pageup img {
+    width: 100%; }
 
 @media (max-width: 991px) {
   .promo__wrapper {
